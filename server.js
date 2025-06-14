@@ -20,7 +20,10 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({ 
+  origin: "http://localhost:5173", // ya aapka frontend domain
+  credentials: true // if you need credentials
+}));
 
 
 // Express parses incoming JSON
