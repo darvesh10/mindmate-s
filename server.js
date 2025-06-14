@@ -21,7 +21,7 @@ connectDB();
 const app = express();
 
 app.use(cors({ 
-  origin: "http://localhost:5173", // ya aapka frontend domain
+  origin: "https://mindamate-c.vercel.app", // ya aapka frontend domain
   credentials: true // if you need credentials
 }));
 
