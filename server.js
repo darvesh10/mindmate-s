@@ -20,11 +20,7 @@ connectDB();
 
 const app = express();
 
-app.use(cors({ 
-  origin: ['http://localhost:5173', 'https://mindmate-client.vercel.app'], 
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
-  
-})) 
+app.use(cors());
 
 
 // Express parses incoming JSON
